@@ -1,4 +1,4 @@
-# TWRP Device configuration for the Oneplus 5T
+# TWRP Device configuration for the Oneplus 5T 
 
 Copyright (C) 2017 Albe96, <alberteno098@gmail.com> 
 
