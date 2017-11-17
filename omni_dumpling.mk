@@ -25,8 +25,8 @@ PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := oneplus5t
-PRODUCT_NAME := omni_oneplus5t
+PRODUCT_DEVICE := dumpling
+PRODUCT_NAME := omni_dumpling
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus A5010
 PRODUCT_MANUFACTURER := OnePlus
