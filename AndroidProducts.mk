@@ -16,4 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/omni_oneplus5t.mk
+$(LOCAL_DIR)/omni_dumpling.mk
