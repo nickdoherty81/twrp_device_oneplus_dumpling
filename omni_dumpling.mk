@@ -15,10 +15,23 @@
 # limitations under the License.
 #
 
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit Telephony packages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit language packages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
@@ -28,5 +41,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEVICE := dumpling
 PRODUCT_NAME := omni_dumpling
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := OnePlus A5010
+PRODUCT_MODEL := A5010
 PRODUCT_MANUFACTURER := OnePlus
